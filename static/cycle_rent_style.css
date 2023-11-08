@@ -1,0 +1,228 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+nav{
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: rgb(21, 21, 21);
+    z-index: 100;
+}
+.pfp{
+    width: 45px;
+    height: auto;
+    float: right;
+    margin-left: 25px;
+    padding: 2px 1px;
+    cursor: pointer;
+    border-radius: 70%;
+}
+.logo{
+    width: 50px;
+    height: auto;
+    float: left;
+    padding: 11px 22px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.navlinks{
+    flex: 1;
+    text-align: right;
+}
+.navlinks ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.navlinks ul li a{
+    color: #FFD95A;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Manrope', sans-serif;
+    padding: 22px 22px;
+}
+.navlinks ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background:whitesmoke;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navlinks ul li:hover::after{
+    width: 50%;
+}
+
+.img-section{
+    display: inline-block; 
+    /* background-color: orange; */
+    /* padding: 100px 100px 100px 100px; */
+    padding: 80px;
+
+}
+
+
+.rent-body{
+    margin-top: 72px;
+}
+
+h1 {
+    text-align: center;
+  }
+
+  .ngo-list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .ngo-item {
+    display: flex;
+    padding: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-top: 100px;
+    margin-top: 40px;
+    border-radius: 15px;
+  }
+
+  .ngo-image {
+    width: 500px;
+    height: 300px;
+    margin-right: 50px;
+    border-radius: 12px;  
+  }
+
+  .ngo-details {
+    margin-right: 30px;
+    font-size: 19px;
+    width: 100%;
+  }
+
+  .ngo-details p:nth-child(2) {
+    color: #000000;
+    font-size: 16px;
+  }
+  .ngo-details p:nth-child(3) {
+      font-family: "Times New Roman", cursive;
+      color: #b06868;
+      font-size: 16px;
+    }
+
+.heading-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.heading-container p{
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.about-container{
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.donate-btn-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.donate-button {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border-radius: 7px;
+}
+
+.donate-button:hover {
+  background-color: rgb(255, 179, 0);
+  color: black;
+  font-weight: bold;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.main-list{
+  margin-top: 0px;
+}
+
+.list-heading-container{
+  margin-top: 140px;
+  margin-left: 80px;
+  margin-bottom: 60px;
+}
+
+.list-heading-heading{
+  font-size: 30px;
+  font-weight: 700;
+}
+
+
+.book-btn-container{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    --bg: #000;
+    --hover-bg: #ffd000;
+    --hover-text: #000;
+    color: #fff;
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.button:hover {
+    color: var(--hover-text);
+    transform: translate(-0.25rem,-0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.button:active {
+    transform: translate(0);
+    box-shadow: none;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/static/borrower_login_style.css">
+</head>
+<body>
+    <nav>
+        <img src="/static/logo.jpg" class="logo">
+        <div class="navlinks">
+            <ul>
+                <li><a href="home">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Login</a></li>
+                <img src="/static/pfpaa.jpg" class="pfp">
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="form-body">
+        <div id="login-form-wrap">
+            <h2>Borrower Login</h2>
+            <form id="login-form" action="/login-borrower" method="POST">
+                <p>
+                <input type="text" id="username" name="username" placeholder="Username" required><i class="validation"><span></span><span></span></i>
+                </p>
+                <p>
+                <input type="text" id="email" name="password" placeholder="Password" required><i class="validation"><span></span><span></span></i>
+                </p>
+                <p>
+                <input type="submit" id="login" value="Login">
+                </p>
+            </form>
+            <div id="create-account-wrap">
+                <p>Not a member? <a href="signup-borrower">Create Account</a><p>
+            </div><!--create-account-wrap-->
+        </div><!--login-form-wrap-->
+        <!-- partial -->
+    </div>
+
+</body>
+</html>

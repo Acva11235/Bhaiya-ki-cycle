@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="/static/cycle_rent_style.css">
+</head>
+<body>
+    <nav>
+        <img src="/static/logo.jpg" class="logo">
+        <div class="navlinks">
+            <ul>
+                <li><a href="home">Home</a></li>
+                <li><a href="home#about">About</a></li>
+                <li><a href="home#contact">Contact</a></li>
+                <li><a href="login-link">Login</a></li>
+                <img src="/static/pfpaa.jpg" class="pfp">
+            </ul>
+        </div>
+    </nav>
+
+    <!-- <section class="rent-body">
+        <div class="img-section">
+            <div class="rent-image-box">
+                <img src="/static/about_us_pic.png" alt="" class="rent-image">
+            </div>
+        </div>
+        
+
+        <div class="rent-about">
+            <div class="rent-about-heading">
+                <p>Heyy this is about the {cycle name}</p>
+            </div>
+            <div>
+                <p>This is about</p>
+            </div>
+            
+        </div>   
+    </section> -->
+
+    <section class="rent-body">
+        <!-- <div class="list-heading-container">
+            <p class="list-heading-heading">Book cycles Now !!</p>
+        </div> -->
+         {% for k in lender %}
+        <div class="main-list">
+        <div class="item-box">
+            <li class="ngo-item">
+            <img src="/static/{{k.0}}.jpg" height="400" width="400" alt=" cycle img" class="ngo-image">
+            <div class="ngo-details">
+                <div class="heading-container"> 
+                <!-- <p>{{k.0}}: {{k.3}}</p> -->
+                    <p>{{k.0}}</p>
+                </div>
+                <div class="tag-line-container">  
+                
+                </div>
+                <div class="about-container">
+                <!-- <p>{{k.2}}</p> -->
+                    
+                    <p style="color: black;">Location: {{k.7}}</p>
+                    <p style="color: black;">Price: {{k.8}}</p>
+                    <p style="color: black;">Brand: {{k.2}}</p>
+                    <p style="color: black;">Type: {{k.10}}</p>
+                    <p style="color: black;">Cycle Age: {{k.2}}</p>
+                    <p style="color: black;">Contact Number: {{k.5}}</p>
+                    <p style="color: black;">Email: {{k.6}}</p>
+                    
+                    
+                </div>
+                <div class="donate-btn-container">
+                <!-- <button class="donate-button">
+                    <span>Rent</span>
+                </button> -->
+                </div>
+            </div>
+            </li>
+        </div>
+        </div>
+        <!-- {% endfor %} -->
+    </section>
+
+
+
+
+
+    <div class="book-btn-container">
+        <button class="button">book</button>
+    </div>
+
+
+
+</body>
+</html>

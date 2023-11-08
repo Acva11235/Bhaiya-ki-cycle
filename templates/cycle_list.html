@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/cycle_list_style.css">
+</head>
+<body>
+
+    <nav>
+        <img src="/static/logo.jpg" class="logo">
+        <div class="navlinks">
+            <ul>
+                <li><a href="home">Home</a></li>
+                <li><a href="home#about">About</a></li>
+                <li><a href="home#contact">Contact</a></li>
+                <img src="/static/pfpaa.jpg" class="pfp">
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="list-heading-container">
+        <p class="list-heading-heading">Book cycles Now!</p>
+    </div>
+     {% for k in user %}
+    <div class="main-list">
+    <div class="item-box">
+        <li class="cycle-item">
+        <img src="/static/{{k.0}}.jpg" height="400" width="400" alt=" cycle logo" class="cycle-image">
+        <div class="cycle-details">
+            <div class="heading-container"> 
+                <p>{{k.0}}</p>
+            </div>
+            <div class="tag-line-container">  
+            
+            </div>
+            <div class="about-container">
+                <p style="color: black;">TYPE: {{k.10}}</p>
+                <p style="color: black;">BRAND: {{k.1}}</p>
+                <p style="color: black;">PRICE: {{k.8}}/hr</p>
+            </div>
+            <div class="rent-btn-container">
+            <button class="rent-button" onclick="location.href = 'rent/{{k.0}}';" >
+                <span>Rent</span>
+            </button>
+            </div>
+        </div>
+        </li>
+    </div>
+    </div>
+     {% endfor %}
+
+</body>
+</html>

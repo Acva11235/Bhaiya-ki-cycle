@@ -1,0 +1,58 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar-template</title>
+    <link rel="stylesheet" href="/static/borrower_signup_style.css">
+    
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet"> -->
+</head>
+
+    <nav>
+        <img src="/static/logo.jpg" class="logo">
+        <div class="navlinks">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="login-borrower">Login</a></li>
+                <img src="/static/pfpaa.jpg" class="pfp">
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <div class="form-body">
+        <div id="login-form-wrap">
+            <h2>SignUP - Borrower</h2>
+            <form id="login-form" action="/signup-borrower" method="POST">
+                <p>
+                <input type="text" id="username" name="username" placeholder="Username" required><i class="validation"><span></span><span></span></i>
+                </p>
+                <p>
+                    <input type="email" id="email" name="email" placeholder="E-mail" required><i class="validation"><span></span><span></span></i>
+                    </p>
+                <p>
+                <input type="text" id="password" name="password" placeholder="Password" required><i class="validation"><span></span><span></span></i>
+                </p>
+                <p>
+                    <input type="text" id="contact" name="contact" placeholder="Contact number" required><i class="validation"><span></span><span></span></i>
+                    </p>
+                    <p>
+                        <input type="text" id="address" name="address" placeholder="Address" required><i class="validation"><span></span><span></span></i>
+                        </p>
+                <p>
+                <input href="login-link" type="submit" id="createaccount" value="Create Account">
+                </p>
+            </form>
+        </div><!--login-form-wrap-->
+        <!-- partial -->
+    </div>
+    
+</body>
+</html>
